@@ -118,7 +118,6 @@ class DiceLoss(torch.nn.Module):
         dice_scores = self.weights * intersection / cardinality  # Calculate Dice scores
         return - torch.mean(dice_scores)  # Return the mean of the negative Dice scores
 
-
     def cuda(self, device=None):
         self = super().cuda(device)
         self.weights = self.weights.cuda(device)

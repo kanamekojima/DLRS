@@ -87,7 +87,7 @@ def main():
                         dest='batch_size', help='batch size')
     parser.add_argument('--patch-buffer-size', type=int, default=5000,
                         dest='patch_buffer_size', help='patch buffer size')
-    parser.add_argument('--patch-stride', type=int, default=128,
+    parser.add_argument('--patch-stride', type=int, default=32,
                         dest='patch_stride', help='patch stride')
     parser.add_argument('--segmentation-type', type=str, required=True,
                         dest='segmentation_type',
